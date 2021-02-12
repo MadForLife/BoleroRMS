@@ -5,6 +5,7 @@ namespace Data.Entities
     public class CreditCard
     {
         private DateTime? _timeStamp = null;
+        public int Id { get; set; }
         public string CreditCardId { get; set; }
         public DateTime ExpiresOn { get; set; }
         public uint CVV { get; set; }

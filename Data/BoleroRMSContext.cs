@@ -31,7 +31,7 @@ namespace Data
             builder.Entity<Guest>()
                 .HasOne(x => x.CardDetails)
                 .WithOne(x => x.Guest)
-                .HasForeignKey<CreditCard>(x => x.CreditCardId);
+                .HasForeignKey<CreditCard>(x => x.Id);
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
